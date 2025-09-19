@@ -80,7 +80,7 @@ body {
     padding: 0rem 1rem;
     margin-top: 8px;
     border-radius: 9999px;
-    
+
     font-size: 16px;
     font-weight: 600;
     color: black;
@@ -175,6 +175,7 @@ body {
 .banner-content {
     width: 60%;
 
+
 }
 
 .main-offer {
@@ -191,12 +192,14 @@ body {
 
 .code-box {
     border: 2px dashed #1f2937;
-    padding: 10px 20px;
+    padding: 8px 15px;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     margin-bottom: 20px;
     font-size: 1.2em;
     font-weight: bold;
+    border-radius: 5px;
+    margin-left: 6px;
 }
 
 .product-note {
@@ -219,9 +222,9 @@ body {
 }
 
 .shop-button {
-    background-color: #ef95a4;
-    color: #333;
-    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -455,12 +458,78 @@ body {
     margin-bottom: 0;
 }
 
+/* ---------- Carousel layout ---------- */
+.review-carousel {
+    position: relative;
+    width: min(100%, 100%);
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.review-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 30px;
+    padding: 20px 80px 20px 60px;
+
+}
+
+
+.review-track>.review-cards {
+    flex: 0 0 calc((83% - 40px)/3);
+    
+}
+
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.dots button.active {
+    background: #333;
+}
+
 /*footer*/
-
-
-
-
-
 .footer {
     background-color: #f7dadf;
     color: black;
