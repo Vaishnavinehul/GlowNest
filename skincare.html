@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skincare</title>
+    <link rel="stylesheet" href="./bestseller.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+         body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f5;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-image: url('./skincare-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            margin-top: -60px;
+
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(199, 179, 179, 0.365);
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem;
+            color: black;
+        }
+
+        .heading {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-heading {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .sub-heading {
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="header.html" style="border:none;width:100%;height:220px; z-index:9999;"></iframe>
+
+
+    <div class="hero-section">
+        <div class="content">
+            <a style="text-decoration: none; color: black;" href="./index.html"><span>Home</span></a> / <a
+                style="text-decoration: none; color: black;" href=""><span>Skincare</span></a><br><br>
+                <span style="text-decoration: none; background-color: #1f2937; color: white; font-weight:700; padding: 10px; border-radius: 5px;">NEW LAUNCH</span>
+            <h5  style="margin-top: 20px;"  class="main-heading">Glass Skin Glow</h5>
+            <p class="sub-heading">With Korean Hydra Glow<br> Moisturizer</p>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="filter-container">
+            <h2>Filter</h2>
+
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Price</span>
+                    <span class="icon">&#x25B2;</span>
+                </div>
+                <div class="filter-content">
+
+                    <input style="width: 100%;" type="range">
+                    <div class="price-range">
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="0">
+                        </div>
+                        <span class="range">to</span>
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="1595">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Category</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Subcategory</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Product Range</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section" style="border-bottom: none;">
+                <div class="filter-header">
+                    <span>Skin Type</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="shop-product-container">
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1">BUY2@649</div>
+                <div class="card-image">
+                    <img src="./images/hydra-glow-mosturizer.png" alt="Hydra Glow Moisturizer" class="cart-image">
+                </div>
+                <div class="product-rating">
+                    4.6 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag">New Launch</span>
+                <span class="product-name">Hydra Glow Moisturizer</span>
+                <span class="product-description">Instant Glass Skin Glow<br>300gm Available in 4 sizes</span>
+                <span class="product-price">From ₹595</span>
+                <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <!-- <div class="badge-1"></div> -->
+                <div class="card-image">
+                    <img src="./images/vitamin-c-serum.jpg" alt="Vitamin C Face Serum" class="cart-image">
+                </div>
+                <div class="product-rating">
+                    4.6 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag">#1 SKINCARE</span>
+                <span class="product-name">Vitamin C Face Serum</span>
+                <span class="product-description">Glowing, Brighter Skin</span>
+                <span class="product-price">₹630</span>
+                <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1">FLAT30%OFF</div>
+                <div class="card-image">
+                    <img src="./images/peeling.png" alt="30% Peeling Solution" class="cart-image">
+                </div>
+
+                <div class="product-rating">
+                    4.7 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+
+                <span class="product-tag">#2 SKINCARE</span>
+                <span class="product-name">30% Peeling Solution</span>
+                <span class="product-description">Tan Removal<br>2 Sizes</span>
+                <span class="product-price">From ₹745</span>
+                <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+
+            <div class="shop-card">
+                 <div class="card-image-container">
+                <!-- <div class="badge-1"></div> -->
+                <div class="card-image">
+                    <img src="./images/niacenamide-face-serum.png" alt="Niacinamide Face Serum" class="cart-image">
+                </div>
+                <div class="product-rating">
+                    4.9 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag">#3 SKINCARE</span>
+                <span class="product-name">Niacinamide Face Serum</span>
+                <span class="product-description">Brightens & Fades Spots</span>
+                <span class="product-price">₹590</span>
+                <button class="select-shade-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/moiturizer.png" alt="Super Glow Moisturizer" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">#4 SKINCARE</span>
+                    <span class="product-name">Super Glow Moisturizer</span>
+                    <span class="product-description">Enhances Glow</span>
+                    <span class="product-price">₹650</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/sunscreen-c.png" alt="Vitamin C Gel Sunscreen SPF 30" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.9 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#1 SUNSCREEN</span>
+                    <span class="product-name">Vitamin C Gel Sunscreen SPF 30</span>
+                    <span class="product-description">Brightens & Prevents Tanning<br>2 Varients</span>
+                    <span class="product-price">From ₹795</span>
+                    <button class="select-shade-btn">Add to cart<i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/barrier-repaire.png" alt="Barrier Repair Moisturizer" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">BEST FOR DRY SKIN</span>
+                    <span class="product-name">Barrier Repair Moisturizer</span>
+                    <span class="product-description">Strengthens Skin Barrier</span>
+                    <span class="product-price">₹495</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/roll-on.png" alt="Roll-On Under Eye Serum" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag"></span>
+                    <span class="product-name">Roll-On Under Eye Serum</span>
+                    <span class="product-description">Under Eye Dark Circles</span>
+                    <span class="product-price">₹400</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">Sold Out</div>
+                    <div class="card-image">
+                        <img src="./images/glow-cream-serum.png" alt="Glow Crème Serum" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag"></span>
+                    <span class="product-name">Glow Serum</span>
+                    <span class="product-description">Brightens Skin</span>
+                    <span class="product-price">₹650</span>
+                   
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/foaming-facewash.png" alt="Foaming Face Wash" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag"></span>
+                    <span class="product-name">Foaming Face Wash</span>
+                    <span class="product-description">Non-Drying</span>
+                    <span class="product-price">₹550</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer section-->
+
+    <div class="footer">
+        <div class="comp-info">
+            <div>
+                <img src="./logo.png" class="logo">
+
+                <p>This is a sample website footer. Replace this text with real info about your company or
+                    project.</p>
+            </div>
+        </div>
+        <div class="quick-links">
+            <h3>IMPORTANT LINKS</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./shipping.html" target="_parent" style="color:#000000; text-decoration:none;">Shipping and
+                        Returns</a></li>
+                <li><a href="terms.html" target="_parent" style="color:#000000; text-decoration:none;">Terms and
+                        Conditions</a></li>
+                <li><a href="./refundpolicy.html" target="_parent" style="color:#000000; text-decoration:none;">Refund Policy</a></li>
+                <li><a href="./goodies.html" style="color:#000000; text-decoration:none;">GlowNest Goodies</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>INFORMATION</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./trackorder.html" target="_parent" style="color:#000000; text-decoration:none;">Track your order</a>
+                </li>
+                <li><a href="./about.html" target="_parent" style="color:#000000; text-decoration:none;">About Us</a></li>
+                <li><a href="./contact.html" target="_parent" style="color:#000000; text-decoration:none;">Contact Us</a></li>
+                <li><a href="./faq.html" target="_parent" style="color:#000000; text-decoration:none;">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

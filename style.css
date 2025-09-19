@@ -1,0 +1,880 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    ;
+    background-color: white;
+    margin: 0;
+
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+
+}
+
+.section-title h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 0;
+
+
+}
+
+.section-title p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+
+.product-grid-container {
+    display: flex;
+    justify-content: space-around;
+
+    padding-bottom: 1rem;
+
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image-container {
+    position: relative;
+
+}
+
+.badge-1 {
+    position: absolute;
+    top: 0px;
+    border-radius: 0.5rem 0rem 0.5rem 0;
+    left: 0px;
+    background-color: #eeafba;
+    color: black;
+    padding: 6px 8px;
+
+}
+
+
+.product-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.product-rating {
+    background-color: #fff;
+    padding: 0rem 1rem;
+    margin-top: 8px;
+    border-radius: 9999px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.rating-star {
+    color: #fbbf24;
+    font-size: 18px;
+}
+
+.product-tag {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ef4444;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.product-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.product-price-from {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.add-to-cart-btn,
+.select-shade-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.add-to-cart-btn {
+    background-color: #eeafba;
+    color: #000;
+}
+
+
+.add-to-cart-btn:hover {
+    background-color: #ef95a4;
+}
+
+.select-shade-btn {
+    background-color: #eeafba;
+    color: #000;
+}
+
+.select-shade-btn:hover {
+    background-color: #ef95a4;
+}
+
+.btn-arrow {
+    margin-left: 0.5rem;
+}
+
+/*banner*/
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 180px;
+    background-color: #eeafba;
+    color: #004d40;
+    width: 100%;
+    padding-top: 30x;
+    padding-bottom: 15px;
+
+}
+
+
+.banner-content {
+    width: 60%;
+
+}
+
+.main-offer {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+.discount-info {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.code-box {
+    border: 2px dashed #1f2937;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-note {
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    color: #4b5563;
+}
+
+.cart-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-image {
+    width: 100%;
+    height: 240px;
+    padding: 5px;
+
+}
+
+.shop-button {
+    background-color: #ef95a4;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+.product-image {
+
+    width: 40%;
+    padding-left: 5%;
+
+
+}
+
+.product-image img {
+    width: 80%;
+
+}
+
+
+.main-offer {
+    font-size: 2.5em;
+}
+
+.discount-info {
+    font-size: 1.3em;
+    color: #4b5563;
+}
+
+/*shop by ingridient*/
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.ingredients-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.ingredient-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    gap: 20px;
+    text-align: center !important;
+    width: 16.66%;
+}
+
+.ingredient-image {
+    width: 100%;
+    margin-bottom: 0px;
+    height: 230px;
+
+}
+
+.ingredient-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ingredient-name {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*glownest code*/
+
+.container-code {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.sub-header {
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #6b7280;
+
+
+}
+
+.icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 14px;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100px;
+
+}
+
+.icon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon-text {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #004d40;
+}
+
+.right-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.promise-header {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-align: center;
+}
+
+.promise-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    padding-right: 40px;
+    padding-right: 40px;
+}
+
+/*review*/
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+
+}
+
+.review-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.review-cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 20%;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review-info h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.review-info p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.stars {
+    color: #fdd835;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/*footer*/
+
+
+
+
+
+.footer {
+    background-color: #f7dadf;
+    color: black;
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    color: black;
+}
+
+.comp-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+}
+
+.comp-info p {
+    width: 60%;
+}
+
+.quick-links {
+    width: 20%;
+}
+
+.contact {
+    width: 20%;
+}
+
+/*shipping and return*/
+
+.container-shipment {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*about us*/
+
+
+
+.team-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.team-header {
+    margin-bottom: 50px;
+}
+
+.team-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.team-header p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 3px solid #eee;
+}
+
+.member-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.member-name {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+}
+
+.member-title {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}
+
+/*contact us*/
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #ffffff;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 64px 24px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.card-icon {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: black;
+    text-align: center;
+}
+
+.card-subtitle {
+    color: #666;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: 24px;
+    color: #666;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+
+}
+
+.phone-number-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.phone-number {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: black;
+}
+
+.card-button {
+    background-color: #eeafba;
+    color: #000000;
+    font-weight: 500;
+    padding: 8px 32px;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+}
+
+/*form*/
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+.contact-button {
+    background-color: #eeafba;
+    color: #000000;
+    font-weight: 500;
+    padding: 8px 32px;
+    border-radius: 9999px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+
+.contact-form-container:target {
+    display: flex;
+}
+
+.form-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #aaa;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.form-info {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-info label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-info input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-info input:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Collections</title>
+    <link rel="stylesheet" href="./bestseller.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-image: url('./collection-bg-1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            margin-top: -60px;
+
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.322);
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem;
+            color: black;
+        }
+
+        .heading {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-heading {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .sub-heading {
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="header.html" style="border:none;width:100%;height:220px; z-index:9999;"></iframe>
+
+
+    <div class="hero-section">
+        <div class="content">
+            <a style="text-decoration: none; color: black;" href="./index.html"><span>Home</span></a> / <a
+                style="text-decoration: none; color: black;" href=""><span>Collections</span></a>
+            <h1 style="margin-top: 20px;" class="main-heading">Our Collections</h1>
+            <p class="sub-heading">Shop the Skincare, Haircare & Makeup<br>Everyone Loves!</p>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="filter-container">
+            <h2>Filter</h2>
+
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Price</span>
+                    <span class="icon">&#x25B2;</span>
+                </div>
+                <div class="filter-content">
+
+                    <input style="width: 100%;" type="range">
+                    <div class="price-range">
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="0">
+                        </div>
+                        <span class="range">to</span>
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="1595">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Category</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Subcategory</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Product Range</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section" style="border-bottom: none;">
+                <div class="filter-header">
+                    <span>Skin Type</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="shop-product-container">
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">Sold Out</div>
+                    <div class="card-image">
+
+                        <img src="./images/aqua-cream.png" alt="Swiss Aqua Rush Overnight Hydrating Cream" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.6 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag"></span>
+                    <span class="product-name">Swiss Aqua Rush Overnight Hydrating Cream</span>
+                    <span class="product-description">Overnight Intense Hydration<br>50gm</span>
+                    <span class="product-price">₹695</span>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">B1G1FREE</div>
+                    <div class="card-image">
+                        <img src="./images/fruit-facewash.png" alt="Swiss Aqua Rush Hydrating Face Wash" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.6 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag"></span>
+                    <span class="product-name">Swiss Aqua Rush Hydrating Face Wash</span>
+                    <span class="product-description">Delivers Flawless Hydrated Skin<br>100ml</span>
+                    <span class="product-price">₹345</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">Sold Out</div>
+                    <div class="card-image">
+                        <img src="./images/aqua-toner.png" alt="Swiss Aqua Rush Hydrating Gel Toner" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag"></span>
+                    <span class="product-name">Swiss Aqua Rush Hydrating Gel Toner</span>
+                    <span class="product-description">Deeply Hydrates<br>100ml</span>
+                    <span class="product-price">₹325</span>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1"></div>
+                    <div class="card-image">
+                        <img src="./images/foaming-facewash.png" alt="Dubai Bling Matte Lipstick" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.9 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag"></span>
+                    <span class="product-name">Red Vine Face Wash</span>
+                    <span class="product-description">Fights Ageing<br>100ml</span>
+                    <span class="product-price">₹320</span>
+                    <button class="select-shade-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1"></div>
+                    <div class="card-image">
+                        <img src="./images/facescrub.png" alt="Squalane face scrub" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag"></span>
+                    <span class="product-name">Squalane Face Scrub</span>
+                    <span class="product-description">Unclogs Pores<br>50gm</span>
+                    <span class="product-price">₹500</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1"></div>
+                    <div class="card-image">
+                        <img src="./images/creme-combo.png" alt="Day/Night Combo" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.9 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag"></span>
+                    <span class="product-name">Day/Night Combo</span>
+                    <span class="product-description">3 Units</span>
+                    <span class="product-price">₹1,200</span>
+                    <button class="select-shade-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1"></div>
+                <div class="card-image">
+                    <img src="./images/fruit-facewash.png" alt="Face Wash with fruit extractk" class="cart-image">
+                </div>
+                <div class="product-rating">
+                    4.9 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag"></span>
+                <span class="product-name">Face Wash with fruit extract</span>
+                <span class="product-description">Keep Skin Juicy like a Fruits<br>3 units</span>
+                <span class="product-price">₹720</span>
+                <button class="select-shade-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1">Sold Out</div>
+                <div class="card-image">
+                    <img src="./images/aqua-toner.png" alt="Aqua Gel Toner" class="cart-image">
+                </div>
+
+                <div class="product-rating">
+                    4.7 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+
+                <span class="product-tag"></span>
+                <span class="product-name">Aqua Gel Toner</span>
+                <span class="product-description">Deeply Hydrates</span>
+                <span class="product-price">₹525</span>
+            </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1">B1G1FREE</div>
+                <div class="card-image">
+                    <img src="./images/hydrating-facewash.png" alt="Hydrating Face Wash" class="cart-image">
+                </div>
+                <div class="product-rating">
+                    4.6 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag"></span>
+                <span class="product-name">Hydrating Face Wash</span>
+                <span class="product-description">Delivers Hydrated Skin</span>
+                <span class="product-price">₹465</span>
+                <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+            </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                <div class="badge-1">Sold Out</div>
+                <div class="card-image">
+
+                    <img src="./images/aqua-cream.png" alt="Aqua Hydrating Cream" class="cart-image">
+                </div>
+
+                <div class="product-rating">
+                    4.6 <span class="rating-star">&#9733;</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <span class="product-tag"></span>
+                <span class="product-name">Aqua Hydrating Cream</span>
+                <span class="product-description">Overnight Deep Hydration</span>
+                <span class="product-price">₹995</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer section-->
+
+    <div class="footer">
+        <div class="comp-info">
+            <div>
+                <img src="./logo.png" class="logo">
+
+                <p>This is a sample website footer. Replace this text with real info about your company or
+                    project.</p>
+            </div>
+        </div>
+        <div class="quick-links">
+            <h3>IMPORTANT LINKS</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./shipping.html" target="_parent" style="color:#000000; text-decoration:none;">Shipping and
+                        Returns</a></li>
+                <li><a href="terms.html" target="_parent" style="color:#000000; text-decoration:none;">Terms and
+                        Conditions</a></li>
+                <li><a href="./refundpolicy.html" target="_parent" style="color:#000000; text-decoration:none;">Refund Policy</a></li>
+                <li><a href="./goodies.html" style="color:#000000; text-decoration:none;">GlowNest Goodies</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>INFORMATION</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./trackorder.html" target="_parent" style="color:#000000; text-decoration:none;">Track your order</a>
+                </li>
+                <li><a href="./about.html" target="_parent" style="color:#000000; text-decoration:none;">About Us</a></li>
+                <li><a href="./contact.html" target="_parent" style="color:#000000; text-decoration:none;">Contact Us</a></li>
+                <li><a href="./faq.html" target="_parent" style="color:#000000; text-decoration:none;">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

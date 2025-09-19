@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Makeup</title>
+    <link rel="stylesheet" href="./bestseller.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+         body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f5;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-image: url('./cosmatics.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            margin-top: -60px;
+
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.324);
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem;
+            color: black;
+        }
+
+        .heading {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-heading {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .sub-heading {
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 0.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <iframe src="header.html" style="border:none;width:100%;height:220px; z-index:9999;"></iframe>
+
+
+    <div class="hero-section">
+        <div class="content">
+            <a style="text-decoration: none; color: black;" href="./index.html"><span>Home</span></a> / <a
+                style="text-decoration: none; color: black;" href=""><span>Makeup</span></a>
+            <h1 style="margin-top: 20px;" class="main-heading">Rosey Delight Liquid <br> Blush Serum</h1>
+            <p class="sub-heading">New Aqua-Gel Technology</p>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="filter-container">
+            <h2>Filter</h2>
+
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Price</span>
+                    <span class="icon">&#x25B2;</span>
+                </div>
+                <div class="filter-content">
+
+                    <input style="width: 100%;" type="range">
+                    <div class="price-range">
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="0">
+                        </div>
+                        <span class="range">to</span>
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="text" value="1595">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Category</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Subcategory</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Product Range</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+
+            <div class="filter-section" style="border-bottom: none;">
+                <div class="filter-header">
+                    <span>Skin Type</span>
+                    <span class="icon">&#x25BC;</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="shop-product-container">
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/lipstick.png" alt="Liquid Matee Lipstick" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.6 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#1 MAKEUP</span>
+                    <span class="product-name">Liquid Matee Lipstick</span>
+                    <span class="product-description">Nourishing & Hydrating 8 Colors</span>
+                    <span class="product-price">₹780</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/serum-foundation.png" alt="Dream Serum Foundation" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.6 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#2 MAKEUP</span>
+                    <span class="product-name">Dream Serum Foundation</span>
+                    <span class="product-description">Makeup with Skincare 8 Colors</span>
+                    <span class="product-price">₹780</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/bullet-lipstick.png" alt="Liquid finish Lipstick" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">#3 MAKEUP</span>
+                    <span class="product-name">Liquid finish Lipstick</span>
+                    <span class="product-description">Lasts All Day Long with 3 shades</span>
+                    <span class="product-price">₹900</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/highlighter.png" alt="Our Collection Liquid Serum Highlighter"
+                            class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.9 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag">NEW LAUNCH</span>
+                    <span class="product-name">Our Liquid Serum Highlighter</span>
+                    <span class="product-description">With Gloss Technology</span>
+                    <span class="product-price">₹1,000</span>
+                    <button class="select-shade-btn">Select Shade<i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">FLAT20%OFF</div>
+                    <div class="card-image">
+                        <img src="./images/liquid-blush.png" alt="The GloNest Collection Liquid Serum Blush"
+                            class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">NEW LAUNCH</span>
+                    <span class="product-name">The GlowNest Collection Liquid Serum Blush</span>
+                    <span class="product-description">Rich, Creamy Pigment that melts into the skin<br>5 Colors</span>
+                    <span class="product-price">₹595</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/compact.png" alt=" Matte Compact Powder" class="cart-image">
+                    </div>
+                    <div class="product-rating">
+                        4.9 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-tag"></span>
+                    <span class="product-name"> Matte Compact Powder</span>
+                    <span class="product-description"> Matte Finish<br>5 Colors</span>
+                    <span class="product-price">₹545</span>
+                    <button class="select-shade-btn">Select Shade <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">BUY2@649</div>
+                    <div class="card-image">
+                        <img src="./images/bb-cream.png" alt="Glow BB Cream" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">#5 MAKEUP</span>
+                    <span class="product-name">Glow BB Cream</span>
+                    <span class="product-description">Natural Glow, Matte Finish<br>3 Colors</span>
+                    <span class="product-price">₹395</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">FLAT20%OFF</div>
+                    <div class="card-image">
+                        <img src="./images/eye-shadow.png" alt="Rosé Touch 3-in-1 Face Palette" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">New Launch</span>
+                    <span class="product-name">Rosé Touch 3-in-1 Face Palette</span>
+                    <span class="product-description">3-in-1 Travel-friendly Face Palette<br>15 Colors</span>
+                    <span class="product-price">₹995</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">FLAT20%OFF</div>
+                    <div class="card-image">
+                        <img src="./images/15-color-eye-shadow.png" alt="The GloNest Collection Eyeshadow"
+                            class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">New Launch</span>
+                    <span class="product-name">The GlowNest Collection Eyeshadow</span>
+                    <span class="product-description">15-in-1 Palette for Every Mood<br>2 Colors</span>
+                    <span class="product-price">₹945</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+
+
+            <div class="shop-card">
+                <div class="card-image-container">
+                    <div class="badge-1">FLAT20%OFF</div>
+                    <div class="card-image">
+                        <img src="./images/curl-mascara.png" alt="Mega Curl Tubing Mascara" class="cart-image">
+                    </div>
+
+                    <div class="product-rating">
+                        4.7 <span class="rating-star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="product-info">
+
+                    <span class="product-tag">NEW LAUNCH</span>
+                    <span class="product-name">Mega Curl Tubing Mascara</span>
+                    <span class="product-description">Next-gen Tubing Technology<br>5ml</span>
+                    <span class="product-price">₹495</span>
+                    <button class="add-to-cart-btn">Add to cart <i class="fa fa-arrow-right btn-arrow"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer section-->
+
+    <div class="footer">
+        <div class="comp-info">
+            <div>
+                <img src="./logo.png" class="logo">
+
+                <p>This is a sample website footer. Replace this text with real info about your company or
+                    project.</p>
+            </div>
+        </div>
+        <div class="quick-links">
+            <h3>IMPORTANT LINKS</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./shipping.html" target="_parent" style="color:#000000; text-decoration:none;">Shipping and
+                        Returns</a></li>
+                <li><a href="terms.html" target="_parent" style="color:#000000; text-decoration:none;">Terms and
+                        Conditions</a></li>
+                <li><a href="./refundpolicy.html" target="_parent" style="color:#000000; text-decoration:none;">Refund Policy</a></li>
+                <li><a href="./goodies.html" style="color:#000000; text-decoration:none;">GlowNest Goodies</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>INFORMATION</h3>
+            <ul style="list-style:none; padding:0; line-height: 40px;">
+                <li><a href="./trackorder.html" target="_parent" style="color:#000000; text-decoration:none;">Track your order</a>
+                </li>
+                <li><a href="./about.html" target="_parent" style="color:#000000; text-decoration:none;">About Us</a></li>
+                <li><a href="./contact.html" target="_parent" style="color:#000000; text-decoration:none;">Contact Us</a></li>
+                <li><a href="./faq.html" target="_parent" style="color:#000000; text-decoration:none;">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
