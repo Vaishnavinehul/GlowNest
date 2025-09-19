@@ -13,6 +13,7 @@
      border: none;
      position: sticky;
      padding: 1.5rem;
+     margin-left: 10px ;
 
  }
 
@@ -39,6 +40,49 @@
      color: #4a5568;
      cursor: pointer;
  }
+
+ /*new hidden css of filter-categoery*/
+
+ .filter-section-1 {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.5rem;
+        }
+
+        .filter-header-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #4a5568;
+            cursor: pointer;
+        
+        }
+
+        
+        .filter-content-1 {
+            display: none;
+            margin-top: 0.75rem;
+            padding-left: 1rem;
+            list-style: none;
+        }
+
+        .filter-content-1 li {
+            margin: 0.25rem 0;
+            line-height: 35px;
+            color: #4a5568;
+        }
+         .filter-content-1 a {
+          color: #4a5568;
+        }
+
+        
+        .filter-section-1.open .icon {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+
+        /*end*/
 
  .filter-header .icon {
      font-size: 1rem;

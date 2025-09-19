@@ -83,63 +83,91 @@
     </div>
 
     <div class="shop-section">
-        <div class="filter-container">
+         <div class="filter-container">
             <h2>Filter</h2>
 
 
 
             <div class="filter-section">
                 <div class="filter-header">
-                    <span>Price</span>
-                    <span class="icon">&#x25B2;</span>
+                    <span>Price Range</span>
+                    
                 </div>
                 <div class="filter-content">
 
-                    <input style="width: 100%;" type="range">
+                    <input id="priceSlider" min="0" max="3000" value="0" step="10" style="width: 100%;" type="range">
                     <div class="price-range">
                         <div class="price">
                             <span>₹</span>
-                            <input type="text" value="0">
+                            <input id="minPrice" type="text" value="0">
                         </div>
                         <span class="range">to</span>
                         <div class="price">
                             <span>₹</span>
-                            <input type="text" value="1595">
+                            <input type="text" value="3000+">
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="filter-section">
-                <div class="filter-header">
+            <div class="filter-section-1">
+                <div class="filter-header-1" onclick="toggleFilter(this)">
                     <span>Category</span>
                     <span class="icon">&#x25BC;</span>
                 </div>
+
+
+                <ul class="filter-content-1">
+                    <li><label> <a href="./bestseller.html" target="_parent">Bestsellers</a></label></li>
+                    <li><label> <a href="./skincare.html" target="_parent">Skincare</a></label></li>
+                    <li><label> <a href="./haircare.html" target="_parent">Haircare</a></label></li>
+                    <li><label> <a href="./makeup.html" target="_parent">Makeup</a></label></li>
+                    <li><label> <a href="./kits.html" target="_parent">Kits and Combos</a></label></li>
+                    <li><label> <a href="./collection.html" target="_parent">Collections</a></label></li>
+                    <li><label> <a href="./fragrence.html" target="_parent">Fragrences</a></label></li>
+
+
+                </ul>
+
             </div>
 
 
-            <div class="filter-section">
-                <div class="filter-header">
-                    <span>Subcategory</span>
+            <div class="filter-section-1">
+                <div class="filter-header-1" onclick="toggleFilter(this)">
+                    <span>Price</span>
                     <span class="icon">&#x25BC;</span>
                 </div>
+
+
+                <ul class="filter-content-1">
+                    <li> <label>Rs.100 - Rs. 500</label></li>
+                    <li><label> Rs.500 - Rs. 1000</label></li>
+                    <li><label>Rs.1000 - Rs. 1500</label></li>
+                    <li><label>Rs.1500 - Rs. 2000</label></li>
+                    <li><label>Rs.2000 - Rs. 2500</label></li>
+                    <li><label>Rs.2500 - Rs. 3000+</label></li>
+                </ul>
+
             </div>
 
 
-            <div class="filter-section">
-                <div class="filter-header">
-                    <span>Product Range</span>
-                    <span class="icon">&#x25BC;</span>
-                </div>
-            </div>
-
-
-            <div class="filter-section" style="border-bottom: none;">
-                <div class="filter-header">
+            <div class="filter-section-1">
+                <div class="filter-header-1" onclick="toggleFilter(this)">
                     <span>Skin Type</span>
                     <span class="icon">&#x25BC;</span>
                 </div>
+
+
+                <ul class="filter-content-1">
+                    <li> <label>Pigmented Skin</label></li>
+                    <li><label> Dry and Sensitive Skin</label></li>
+                    <li><label>Oily and Itchy Skin</label></li>
+                    <li><label>Combination Skin (Dry+Oily)</label></li>
+
+
+                </ul>
+
             </div>
 
         </div>
@@ -271,6 +299,33 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        function toggleFilter(header) {
+            const section = header.parentElement;
+            section.classList.toggle('open');
+
+
+            const content = section.querySelector('.filter-content-1');
+            if (section.classList.contains('open')) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <script>
+        const slider = document.getElementById('priceSlider');
+        const minPriceInput = document.getElementById('minPrice');
+
+        slider.addEventListener('input', () => {
+            // Update the first price input whenever slider moves
+            minPriceInput.value = slider.value;
+        });
+    </script>
+
 
 
 </body>
