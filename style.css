@@ -225,7 +225,7 @@ body {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 5px;
@@ -651,7 +651,7 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     padding: 30px;
-    width: 300px;
+    width: 3F00px;
     display: flex;
     flex-direction: column;
     align-items: center;
